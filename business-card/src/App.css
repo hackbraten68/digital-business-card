@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-dark: #4A4E74;
+    --clr-darker: #2B283A;
+    --clr-light: #F5F5F5;
+    --clr-lighter: #fff;
+    --clr-accent: #F47D27;
+    
+    --ff-primary: 'Inter', sans-serif;
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --fs-small: .7em;
+}
+
+body {
+    background-color: var(--clr-darker);
+    width: 100%;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 382px;
+    justify-content: center;
+    
+}
+
+.App {
+    width: 382px;
+    background-color: var(--clr-dark);
+    display: grid;
+    place-items: center;
+    padding: 1em;
+}
+
+.Profile {
+    width: 350px;
+    height: 350px;
+}
+
+.Info {
+    border: 1px red solid;
+    width: 350px;
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-light);
+}
+
+.Info p {
+    color: var(--clr-accent);
+    text-transform: uppercase;
+}
+
+.btn--container {
+    display: flex;
+    border: 1px solid orange;
+    
+}
+
+.btn--container a {
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: var(--clr-lighter);
+    margin: .25em 1em;
+    border-radius: .35em;
+}
+
+.MainContent {
+    padding: .5em 2em;
+    background-color: var(--clr-light);
+    
+}
+
+.MainContent p {
+    font-size: var(--fs-small);
+}
