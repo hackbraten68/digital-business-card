@@ -10,6 +10,7 @@
     --clr-light: #F5F5F5;
     --clr-lighter: #fff;
     --clr-accent: #F47D27;
+    --clr-grey: #D5D4D8;
     
     --ff-primary: 'Inter', sans-serif;
     --fw-reg: 400;
@@ -27,6 +28,7 @@ body {
     display: grid;
     grid-template-columns: 382px;
     justify-content: center;
+    margin-bottom: 0;
     
 }
 
@@ -38,9 +40,14 @@ body {
     padding: 1em;
 }
 
-.Profile {
+.Profile img {
     width: 350px;
     height: 350px;
+    object-fit: cover;
+    aspect-ratio: 5 / 8;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
+    margin-bottom: 0;
 }
 
 .Info {
@@ -73,9 +80,16 @@ body {
 .MainContent {
     padding: .5em 2em;
     background-color: var(--clr-light);
-    
+}
+
+.MainContent h4 {
+    margin: 2em auto .5em;
 }
 
 .MainContent p {
     font-size: var(--fs-small);
+}
+
+.MainContent p:last-child {
+    margin-bottom: 3em;
 }
